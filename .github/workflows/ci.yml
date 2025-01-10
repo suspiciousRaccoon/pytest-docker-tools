@@ -141,6 +141,3 @@ jobs:
       shell: bash
       run: poetry run coverage run -m pytest
 
-    - name: Upload coverage to Codecov
-      shell: bash
-      run: poetry run codecov --flags unittests -e OS -e PYTHON --tries 20
